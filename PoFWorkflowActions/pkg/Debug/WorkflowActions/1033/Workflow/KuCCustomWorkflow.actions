@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WorkflowInfo>
+  <Actions>
+    <Action Name="Projektaufgabe erstellen"
+    ClassName="KuCWorkflowActions.KuCCreateProjectTask"
+    Assembly="KuCWorkflowActions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=689785be5ff74832"
+    AppliesTo="all"  Category="KuC"> 
+      <RuleDesigner Sentence="Erstelle Eintrag in Aufgabeliste auf %1 mit Inhaltstyp %2, Titel %3, Beschreibung %4 und Link %7 für %5 (AufgabenID: %6)">
+        <FieldBind Field="Url" Text="Die Url der Seite" DesignerType="Hyperlink" Id="1" />
+        <FieldBind Field="ContentType" Text="Inhaltstyp" DesignerType="TextArea" Id="2" />
+        <FieldBind Field="Title" Text="Der Titel der Aufgabe" DesignerType="TextArea" Id="3" />
+        <FieldBind Field="Descript" Text="Beschreibung der Aufgabe" DesignerType="TextArea" Id="4" />
+        <FieldBind Field="AccountName" Text="Der User" DesignerType="SinglePerson" Id="5" />
+        <FieldBind Field="TaskID" Text="ID der Aufgabe" DesignerType="ParameterNames" Id="6" />
+        <FieldBind Field="Link" Text="Link zum Dokument" DesignerType="TextArea" Id="7" />
+      </RuleDesigner>
+      <Parameters>
+        <Parameter Name="Url" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="ContentType" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="Title" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="Descript" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="AccountName" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="TaskID" Type="System.Int32, mscorlib" Direction="Out" />
+        <Parameter Name="Link" Type="System.String, mscorlib" Direction="In" />
+      </Parameters>
+    </Action>
+    <Action Name ="Aufgabe für Projektteamanforderung"
+            ClassName="KuCWorkflowActions.KuCSetProjectMember"
+            Assembly="KuCWorkflowActions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=689785be5ff74832" AppliesTo="all" Category="KuC">
+      <RuleDesigner Sentence="Erstelle Eintrag in Aufgabeliste auf %1 mit Inhaltstyp %2, Titel %3, Beschreibung %4, Link %6, Zieltermin %7, WorkflowID %8 und Aufgabenquelle %9 für %5 (AufgabenID %10)">
+        <FieldBind Field="Url" Text="Die Url der Seite" DesignerType="Hyperlink" Id="1" />
+        <FieldBind Field="ContentType" Text="Inhaltstyp" DesignerType="TextArea" Id="2" />
+        <FieldBind Field="Title" Text="Der Titel der Aufgabe" DesignerType="TextArea" Id="3" />
+        <FieldBind Field="Descript" Text="Beschreibung der Aufgabe" DesignerType="TextArea" Id="4" />
+        <FieldBind Field="AccountName" Text="Der User" DesignerType="SinglePerson" Id="5" />
+        <FieldBind Field="Link" Text="Link zum Dokument" DesignerType="TextArea" Id="6" />
+        <FieldBind Field="TargetDate" Text="Zieltermin der Aufgabe" DesignerType="Date" Id="7" />
+        <FieldBind Field="WorkflowID" Text="WorkflowID der Aufgabe" DesignerType="Text" Id="8" />
+        <FieldBind Field="Quelle" Text="Aufgabenquelle der Aufgabe" DesignerType="Text" Id="9" />
+        <FieldBind Field="TaskID" Text="ID der Aufgabe" DesignerType="ParameterNames" Id="10" />
+      </RuleDesigner>
+      <Parameters>
+        <Parameter Name="Url" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="ContentType" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="Title" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="Descript" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="AccountName" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="Link" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="TargetDate" Type="System.DateTime, mscorlib" Direction="In" />
+        <Parameter Name="Quelle" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="WorkflowID" Type="System.Int32, mscorlib" Direction="In" />
+        <Parameter Name="TaskID" Type="System.Int32, mscorlib" Direction="Out" />
+      </Parameters>
+    </Action>
+    <Action Name ="Projektaufgabe aktualisieren"
+            ClassName="KuCWorkflowActions.KuCActualizeProjectTask"
+            Assembly="KuCWorkflowActions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=689785be5ff74832" AppliesTo="all" Category="KuC">
+      <RuleDesigner Sentence="Setze Eintrag in Aufgabeliste auf %1 mit ID %2 auf Status %3">
+        <FieldBind Field="Url" Text="Die Url der Seite" DesignerType="Hyperlink" Id="1" />
+        <FieldBind Field="TaskID" Text="ID der Aufgabe" DesignerType="Integer" Id="2" />
+        <FieldBind Field="Status" Text="Status der Aufgabe" DesignerType="NumberArea" Id="3" />
+      </RuleDesigner>
+      <Parameters>
+        <Parameter Name="Url" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="TaskID" Type="System.Int32, mscorlib" Direction="In" />
+        <Parameter Name="Status" Type="System.String, mscorlib" Direction="In" />
+      </Parameters>
+    </Action>
+    <Action Name ="Projektaufgabe aktualisieren - Erweiterte Version"
+           ClassName="KuCWorkflowActions.KuCActualizeProjectTaskExt"
+           Assembly="KuCWorkflowActions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=689785be5ff74832" AppliesTo="all" Category="KuC">
+      <RuleDesigner Sentence="Setze Eintrag in Aufgabeliste auf %1 mit ID %2 auf Status %3, Zieltermin %4, Aufgabenquelle %5 und WorkflowID %6">
+        <FieldBind Field="Url" Text="Die Url der Seite" DesignerType="Hyperlink" Id="1" />
+        <FieldBind Field="TaskID" Text="ID der Aufgabe" DesignerType="Integer" Id="2" />
+        <FieldBind Field="Status" Text="Status der Aufgabe" DesignerType="NumberArea" Id="3" />
+        <FieldBind Field="DueDate" Text="Zieltermin der Aufgabe" DesignerType="Date" Id="4" />
+        <FieldBind Field="Quelle" Text="Aufgabenquelle der Aufgabe" DesignerType="Text" Id="5" />
+        <FieldBind Field="WorkflowID" Text="WorkflowID der Aufgabe" DesignerType="Text" Id="6" />
+      </RuleDesigner>
+      <Parameters>
+        <Parameter Name="Url" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="TaskID" Type="System.Int32, mscorlib" Direction="In" />
+        <Parameter Name="Status" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="DueDate" Type="System.DateTime, mscorlib" Direction="In" />
+        <Parameter Name="Quelle" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="WorkflowID" Type="System.Int32, mscorlib" Direction="In" />
+      </Parameters>
+    </Action>
+    <Action Name ="Elementberechtigungen entfernen"
+           ClassName="KuCWorkflowActions.KuCPermissions"
+           Assembly="KuCWorkflowActions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=689785be5ff74832" AppliesTo="all" Category="KuC">
+      <RuleDesigner Sentence="Entferne Berechtigungen des Elements %3 in Liste %2 auf Seite %1">
+        <FieldBind Field="Url" Text="Die Url der Seite" DesignerType="Hyperlink" Id="1" />
+        <FieldBind Field="Liste" Text="Bezeichner der Liste" DesignerType="Text" Id="2" />
+        <FieldBind Field="ElementID" Text="ID des Elements" DesignerType="Integer" Id="3" />
+      </RuleDesigner>
+      <Parameters>
+        <Parameter Name="Url" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="Liste" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="ElementID" Type="System.Int32, mscorlib" Direction="In" />
+      </Parameters>
+    </Action>
+    <Action Name ="Zeichenfolge ersetzen"
+      ClassName="KuCWorkflowActions.KuCReplace"
+      Assembly="KuCWorkflowActions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=689785be5ff74832" AppliesTo="all" Category="KuC">
+      <RuleDesigner Sentence="Suche nach %1 in Zeichenfolge %2 und ersetze durch %3 (Neue Zeichenfolge: %4)">
+        <FieldBind Field="SearchString" Text="Suchzeichenfolge" DesignerType="TextArea" Id="1" />
+        <FieldBind Field="InString" Text="Eingabezeichenfolge" DesignerType="TextArea" Id="2" />
+        <FieldBind Field="ReplaceString" Text="Ersatzzeichenfolge" DesignerType="TextArea" Id="3" />
+        <FieldBind Field="OutString" Text="Ausgabezeichenfolge" DesignerType="ParameterNames" Id="4" />
+      </RuleDesigner>
+      <Parameters>
+        <Parameter Name="SearchString" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="InString" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="ReplaceString" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="OutString" Type="System.String, mscorlib" Direction="Out" />
+      </Parameters>
+    </Action>
+    <Action Name ="PDF generieren"
+       ClassName="KuCWorkflowActions.KuCGeneratePDF"
+       Assembly="KuCWorkflowActions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=689785be5ff74832" AppliesTo="all" Category="KuC">
+      <RuleDesigner Sentence="PDF Generierung von Dokument %3 in Liste %2 auf Seite %1">
+        <FieldBind Field="Url" Text="Die Url der Seite" DesignerType="Hyperlink" Id="1" />
+        <FieldBind Field="Liste" Text="Bezeichner der Liste" DesignerType="Text" Id="2" />
+        <FieldBind Field="ElementID" Text="ID des Dokuments" DesignerType="Integer" Id="3" />
+      </RuleDesigner>
+      <Parameters>
+        <Parameter Name="Url" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="Liste" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="ElementID" Type="System.Int32, mscorlib" Direction="In" />
+      </Parameters>
+    </Action>
+  </Actions>
+</WorkflowInfo>

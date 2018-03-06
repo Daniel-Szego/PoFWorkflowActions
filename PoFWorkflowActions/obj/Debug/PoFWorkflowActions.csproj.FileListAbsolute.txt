@@ -1,0 +1,3 @@
+D:\work\Kramerundcrew\Dev\WorkflowAction\KuCWorkflowActions\KuCWorkflowActions\obj\Debug\KuCWorkflowActions.dll
+D:\work\Kramerundcrew\Dev\WorkflowAction\KuCWorkflowActions\KuCWorkflowActions\obj\Debug\KuCWorkflowActions.pdb
+D:\work\Kramerundcrew\Dev\WorkflowAction\PoFWorkflowActions\PoFWorkflowActions\obj\Debug\PoFWorkflowActions.csprojResolveAssemblyReference.cache

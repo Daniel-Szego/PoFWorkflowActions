@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="c4b98ca3-60ac-44fb-863d-f12874a44019" solutionId="c4b98ca3-60ac-44fb-863d-f12874a44019" resetWebServer="false" sharePointProductVersion="15.0" name="WorkflowActions" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <projectItems>
+    <projectItemReference itemId="88d6809f-fd55-4e26-9ca5-5a84dba8eb2d" />
+    <projectItemReference itemId="6feb79b6-9ba0-4ff2-9b2b-141abceaa923" />
+  </projectItems>
+</package>

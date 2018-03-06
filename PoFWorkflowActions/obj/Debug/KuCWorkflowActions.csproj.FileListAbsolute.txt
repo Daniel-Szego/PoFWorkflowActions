@@ -1,0 +1,11 @@
+C:\work\KramerUndCrew\Redesign\Redesign_v5\WorkflowActions\KuCWorkflowActions\bin\Debug\KuCWorkflowActions.dll
+C:\work\KramerUndCrew\Redesign\Redesign_v5\WorkflowActions\KuCWorkflowActions\bin\Debug\KuCWorkflowActions.pdb
+C:\work\KramerUndCrew\Redesign\Redesign_v5\WorkflowActions\KuCWorkflowActions\bin\Debug\Microsoft.SharePoint.DesignTime.Activities.dll
+C:\work\KramerUndCrew\Redesign\Redesign_v5\WorkflowActions\KuCWorkflowActions\bin\Debug\System.Net.Http.Formatting.dll
+C:\work\KramerUndCrew\Redesign\Redesign_v5\WorkflowActions\KuCWorkflowActions\bin\Debug\System.Net.Http.Formatting.xml
+C:\work\KramerUndCrew\Redesign\Redesign_v5\WorkflowActions\KuCWorkflowActions\obj\Debug\KuCWorkflowActions.dll
+C:\work\KramerUndCrew\Redesign\Redesign_v5\WorkflowActions\KuCWorkflowActions\obj\Debug\KuCWorkflowActions.pdb
+C:\work\KramerUndCrew\Redesign\Redesign_v5\WorkflowActions\KuCWorkflowActions\obj\Debug\KuCWorkflowActions.csprojResolveAssemblyReference.cache
+D:\work\Kramerundcrew\Dev\WorkflowAction\KuCWorkflowActions\KuCWorkflowActions\obj\Debug\KuCWorkflowActions.csprojResolveAssemblyReference.cache
+D:\work\Kramerundcrew\Dev\WorkflowAction\KuCWorkflowActions\KuCWorkflowActions\obj\Debug\KuCWorkflowActions.dll
+D:\work\Kramerundcrew\Dev\WorkflowAction\KuCWorkflowActions\KuCWorkflowActions\obj\Debug\KuCWorkflowActions.pdb

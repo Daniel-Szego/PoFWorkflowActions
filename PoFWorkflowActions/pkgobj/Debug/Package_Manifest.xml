@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="c4b98ca3-60ac-44fb-863d-f12874a44019" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="KuCWorkflowActions.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="1031\Workflow\KuCCustomWorkflow.actions" />
+    <TemplateFile Location="1033\Workflow\KuCCustomWorkflow.actions" />
+  </TemplateFiles>
+</Solution>

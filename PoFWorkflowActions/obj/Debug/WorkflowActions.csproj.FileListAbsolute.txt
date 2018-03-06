@@ -1,0 +1,8 @@
+C:\work\KramerUndCrew\Redesign\Redesign_v5\WorkflowActions\WorkflowActions\bin\Debug\WorkflowActions.dll
+C:\work\KramerUndCrew\Redesign\Redesign_v5\WorkflowActions\WorkflowActions\bin\Debug\WorkflowActions.pdb
+C:\work\KramerUndCrew\Redesign\Redesign_v5\WorkflowActions\WorkflowActions\bin\Debug\Microsoft.SharePoint.DesignTime.Activities.dll
+C:\work\KramerUndCrew\Redesign\Redesign_v5\WorkflowActions\WorkflowActions\bin\Debug\System.Net.Http.Formatting.dll
+C:\work\KramerUndCrew\Redesign\Redesign_v5\WorkflowActions\WorkflowActions\bin\Debug\System.Net.Http.Formatting.xml
+C:\work\KramerUndCrew\Redesign\Redesign_v5\WorkflowActions\WorkflowActions\obj\Debug\WorkflowActions.dll
+C:\work\KramerUndCrew\Redesign\Redesign_v5\WorkflowActions\WorkflowActions\obj\Debug\WorkflowActions.pdb
+C:\work\KramerUndCrew\Redesign\Redesign_v5\WorkflowActions\WorkflowActions\obj\Debug\WorkflowActions.csprojResolveAssemblyReference.cache
